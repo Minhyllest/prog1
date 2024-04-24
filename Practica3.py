@@ -330,20 +330,161 @@
 
 #ejercicio 11 f) práctica 3 
         
-c=int(input("ingrese un numero positivo: "))
-n=int(input("ingrese un numero positivo: "))
-divisores=0
-i=n 
-while i>=c:
+# c=int(input("ingrese un numero positivo: "))
+# n=int(input("ingrese un numero positivo: "))
+# divisores=0
+# i=n 
+# while i>=c:
 
-    if n%i==0  :
+#     if n%i==0  :
 
-        divisores=divisores+1
+#         divisores=divisores+1
 
-        if divisores<=c:
+#         if divisores<=c:
 
-            print(i,"es divisor de ",n)
+#             print(i,"es divisor de ",n)
 
-        
+#     i=i-1
+
+#ejercicio 12 práctica 3 
     
-    i=i-1
+# n=int(input("ingrese un numero positivo"))
+# contador=1
+# resultado=1
+# while contador<=n:
+#     resultado=contador*resultado
+#     contador=contador+1 
+# print(resultado)
+
+#ejercicio 13 práctica 3
+
+# n=int(input("ingresa un número: "))
+
+# contador=1
+# suma=0
+
+# while contador<=n:
+#     suma=suma+contador
+#     contador+=1
+#     if n<suma:
+#         break
+# print(n,"<",suma)
+
+
+#ejercicio 14 a) práctica 3
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     print(i*2)
+    
+#ejercicio 14 b) práctica 3
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     print(i*2-1)
+
+#ejercicio 14 c) práctica 3
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     print(i**2)
+
+#ejercicio 14 d) práctica 3
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     print((i**3)-(i**2))
+
+#ejercicio 14 e) práctica 3
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     print(1/(i**2))
+
+
+#ejercicio 15 a) práctica 3
+
+# n=int(input("ingrese un numero: "))
+# suma=0
+# for i in range(1,n+1):
+#     suma=suma+i*2
+#     print(suma)
+
+#ejercicio 15 b) práctica 3
+
+
+# n=int(input("ingrese un numero: "))
+# suma=0
+# for i in range(1,n+1):
+#     suma=suma+(i**2)
+#     print(suma)
+
+#ejercicio 15 c) práctica 3 
+# suma=0
+
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     suma=suma+((i**3)-(i**2))
+#     print(suma)
+
+#ejercicio 15 d) práctica 3
+
+# suma=0
+# n=int(input("ingrese un numero: "))
+
+# for i in range(1,n+1):
+#     suma=suma+(1/(i**2))
+#     print(suma)
+
+#ejercicio 15 e) práctica 3
+
+# Se va acercando al valor 1.644
+
+#ejercicio 16 a) práctica 3 
+
+# n=int(input("ingrese la cantidad de términos a sumar del logaritmo: "))
+# suma=0
+# contador=1
+# while contador<=n:
+#     suma=suma+(1/contador)
+#     contador+=1
+#     while contador<=n:
+#         suma=suma-(1/contador)
+#         contador+=1
+#         break
+
+# print(suma)
+
+#ejercicio 16 b) práctica 3
+# import math
+
+# print(math.log(2)-suma)
+# Desde el término n°6 en adelante
+
+#ejercicio 16 c) práctica 3
+# Desde el término 50 en adelante 
+
+#ejercicio 16 d) práctica 3
+
+e=float(input("ingrese un numero decimal muy pequeño: "))
+suma=0
+contador=1
+valorReal=0.6931471805599353
+while suma!=valorReal:
+    if suma<(valorReal+e) and suma>valorReal:
+        break
+    suma=suma+1/contador
+    contador+=1
+    while suma!=valorReal and suma>valorReal:
+        if suma<valorReal+e:
+            break
+        suma=suma-1/contador
+        contador+=1
+print(contador)
+print("el resultado es",suma)
